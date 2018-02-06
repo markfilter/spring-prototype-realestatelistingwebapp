@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="icon" th:href="@{/favicon.png}" />
+
+        <link rel="stylesheet" th:href="@{/vendor/materialize/css/materialize.css}" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" th:href="@{/app.css}" />
+        <title>RealEstate | Listing</title>
+    </head>
+    <body>
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="container">
+                    <a th:href="@{/}" class="brand-logo">Real<span>.</span>Estate</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse right"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a th:href="@{/about}">About</a></li>
+                        <li class="active"><a th:href="@{/listing}">Listing</a></li>
+                        <li><a th:href="@{/contact}">Contact</a></li>
+                    </ul>
+                    <ul id="mobile-nav" class="side-nav">
+                        <li><a th:href="@{/about}">About</a></li>
+                        <li class="active"><a th:href="@{/listing}">Listing</a></li>
+                        <li><a th:href="@{/contact}">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <h1>Listing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At beatae cupiditate excepturi fuga harum laboriosam molestiae neque omnis sit, voluptatum. Cum dolorum error illum iusto laborum neque quidem rerum sapiente?</p>
+
+        </div>
+
+        <script th:src="@{/vendor/jquery/jquery-1.11.3.js}"></script>
+        <script th:src="@{/vendor/materialize/js/materialize.js}"></script>
+        <script th:src="@{/app.js}"></script>
+    </body>
+</html>
